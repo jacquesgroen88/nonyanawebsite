@@ -41,7 +41,7 @@ const Accommodation = () => {
                     {experiences.map((exp, index) => (
                         <div className="acc-card reveal-on-scroll" key={index}>
                             <div className="acc-img">
-                                <img src={exp.image} alt={exp.title} />
+                                <img src={exp.image} alt={exp.title} loading="lazy" />
                             </div>
                             <div className="acc-info">
                                 <h3>{exp.title}</h3>

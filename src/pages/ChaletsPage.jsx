@@ -33,10 +33,10 @@ const ChaletsPage = () => {
                             </p>
 
                             <div className="category-gallery">
-                                <img src={c1} alt="Chalet 1" />
-                                <img src={c2} alt="Chalet 2" />
-                                <img src={c3} alt="Chalet 3" />
-                                <img src={c4} alt="Chalet 4" />
+                                <img src={c1} alt="Chalet 1" loading="lazy" />
+                                <img src={c2} alt="Chalet 2" loading="lazy" />
+                                <img src={c3} alt="Chalet 3" loading="lazy" />
+                                <img src={c4} alt="Chalet 4" loading="lazy" />
                             </div>
 
                             <div className="info-box">

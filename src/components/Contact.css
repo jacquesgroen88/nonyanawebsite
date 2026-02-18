@@ -37,6 +37,8 @@
     border-radius: 50%;
     font-size: 1.5rem;
     box-shadow: var(--shadow);
+    flex-shrink: 0;
+    /* Prevent squishing */
 }
 
 .contact-detail h3 {

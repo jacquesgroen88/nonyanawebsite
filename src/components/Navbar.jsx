@@ -5,6 +5,7 @@ import logo from '../assets/logo.png';
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -14,27 +15,41 @@ const Navbar = () => {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
+    const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
     return (
-        <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
+        <nav className={`navbar ${isScrolled ? 'scrolled' : ''} ${isMenuOpen ? 'menu-open' : ''}`}>
             <div className="container nav-container">
                 <div className="logo-container">
-                    <Link to="/">
+                    <Link to="/" onClick={() => setIsMenuOpen(false)}>
                         <img src={logo} alt="Nonyana River Lodge" className="nav-logo" />
                     </Link>
                 </div>
-                <ul className="nav-links">
-                    <li><Link to="/">Home</Link></li>
-                    <li><a href="/#accommodation">Experience</a></li>
-                    <li><Link to="/chalets">Chalets</Link></li>
-                    <li><Link to="/camping">Camping</Link></li>
-                    <li><Link to="/weddings">Weddings</Link></li>
-                    <li><a href="/#contact">Contact</a></li>
-                </ul>
-                <button
-                    className="btn-cta"
-                    onClick={() => document.getElementById('footer')?.scrollIntoView({ behavior: 'smooth' })}
-                >
-                    Book Now
+
+                <div className={`nav-links-wrapper ${isMenuOpen ? 'active' : ''}`}>
+                    <ul className="nav-links">
+                        <li><Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link></li>
+                        <li><a href="/#accommodation" onClick={() => setIsMenuOpen(false)}>Experience</a></li>
+                        <li><Link to="/chalets" onClick={() => setIsMenuOpen(false)}>Chalets</Link></li>
+                        <li><Link to="/camping" onClick={() => setIsMenuOpen(false)}>Camping</Link></li>
+                        <li><Link to="/weddings" onClick={() => setIsMenuOpen(false)}>Weddings</Link></li>
+                        <li><a href="/#contact" onClick={() => setIsMenuOpen(false)}>Contact</a></li>
+                    </ul>
+                    <button
+                        className="btn-cta"
+                        onClick={() => {
+                            document.getElementById('footer')?.scrollIntoView({ behavior: 'smooth' });
+                            setIsMenuOpen(false);
+                        }}
+                    >
+                        Book Now
+                    </button>
+                </div>
+
+                <button className="mobile-menu-toggle" onClick={toggleMenu} aria-label="Toggle Menu">
+                    <span className="bar"></span>
+                    <span className="bar"></span>
+                    <span className="bar"></span>
                 </button>
             </div>
         </nav>

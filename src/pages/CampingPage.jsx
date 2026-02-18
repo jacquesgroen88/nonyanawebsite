@@ -33,10 +33,10 @@ const CampingPage = () => {
                             </p>
 
                             <div className="category-gallery">
-                                <img src={cp1} alt="Camping 1" />
-                                <img src={cp2} alt="Camping 2" />
-                                <img src={cp3} alt="Camping 3" />
-                                <img src={cp4} alt="Camping 4" />
+                                <img src={cp1} alt="Camping 1" loading="lazy" />
+                                <img src={cp2} alt="Camping 2" loading="lazy" />
+                                <img src={cp3} alt="Camping 3" loading="lazy" />
+                                <img src={cp4} alt="Camping 4" loading="lazy" />
                             </div>
 
                             <div className="anglers-paradise reveal-on-scroll">
