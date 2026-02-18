@@ -1,0 +1,89 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 0;
+    z-index: 1000;
+    transition: var(--transition);
+    color: white;
+}
+
+.navbar.scrolled {
+    padding: 15px 0;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: var(--shadow);
+    color: var(--primary);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo {
+    height: 180px;
+    /* Large but more balanced */
+    width: auto;
+    transition: var(--transition);
+    filter: brightness(0) invert(1);
+    /* White by default */
+}
+
+.navbar.scrolled .nav-logo {
+    height: 100px;
+    /* Slightly larger when scrolled as requested */
+    filter: none;
+    /* Original colors when scrolled */
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar.scrolled .nav-links a:hover {
+    color: var(--secondary);
+}
+
+.btn-cta {
+    background: var(--accent);
+    color: var(--primary);
+    padding: 14px 34px;
+    /* Decisive size */
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-radius: 8px;
+    /* Match cards */
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(212, 175, 55, 0.2);
+}
+
+.btn-cta:hover {
+    background: #c19b2e;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.35);
+}
+
+@media (max-width: 968px) {
+    .nav-links {
+        display: none;
+    }
+}
