@@ -30,10 +30,6 @@ const Navbar = () => {
                 </div>
 
                 <div className={`nav-links-wrapper ${isMenuOpen ? 'active' : ''}`}>
-                    <div className="mobile-menu-header">
-                        <span className="menu-title">Navigation</span>
-                    </div>
-
                     <ul className="nav-links">
                         <li><Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link></li>
                         <li><a href="/#accommodation" onClick={() => setIsMenuOpen(false)}>Experience</a></li>

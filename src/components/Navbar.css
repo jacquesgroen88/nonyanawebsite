@@ -86,7 +86,7 @@
 
 /* Mobile Toggle */
 .mobile-menu-toggle {
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 6px;
     background: transparent;

@@ -22,6 +22,8 @@
 @media (max-width: 768px) {
     .accommodation-grid {
         grid-template-columns: 1fr;
+        padding: 0 10px;
+        /* Decisive width/spacing */
     }
 }
 

@@ -15,8 +15,8 @@ const Hero = () => {
                         Located just an hour from Johannesburg, tucked away on a broad sweep of the majestic Vaal.
                     </p>
                     <div className="hero-btns">
-                        <a href="#accommodation" className="btn btn-primary">Our Accommodation</a>
-                        <a href="#gallery" className="btn btn-outline">Explore Gallery</a>
+                        <a href="#contact" className="btn btn-primary">Check Availability</a>
+                        <a href="#accommodation" className="btn btn-outline">Explore the Lodge</a>
                     </div>
                 </div>
             </div>

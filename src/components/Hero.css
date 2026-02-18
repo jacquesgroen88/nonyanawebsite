@@ -66,12 +66,14 @@
 
 @media (max-width: 1024px) {
     .hero {
-        padding-top: 15vh;
-        /* Increase space from navbar on tablets */
+        padding-top: 18vh;
+        /* Decisive space from navbar */
     }
 
     .hero-title {
-        font-size: 3.5rem;
+        font-size: clamp(2.2rem, 6vw, 3rem);
+        /* DECISIVELY scale down on tablet */
+        line-height: 1.2;
     }
 }
 
