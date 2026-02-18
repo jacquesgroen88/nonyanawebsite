@@ -80,6 +80,9 @@ h2 {
 .section-header h4 {
     text-align: inherit;
     /* Respect parent (flex-start/center) alignment */
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
 }
 
 /* Global Section Header Hierarchy */
