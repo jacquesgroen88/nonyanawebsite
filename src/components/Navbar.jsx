@@ -19,6 +19,9 @@ const Navbar = () => {
 
     return (
         <nav className={`navbar ${isScrolled ? 'scrolled' : ''} ${isMenuOpen ? 'menu-open' : ''}`}>
+            {/* Overlay for clicking away */}
+            {isMenuOpen && <div className="nav-overlay" onClick={() => setIsMenuOpen(false)}></div>}
+
             <div className="container nav-container">
                 <div className="logo-container">
                     <Link to="/" onClick={() => setIsMenuOpen(false)}>
@@ -27,6 +30,10 @@ const Navbar = () => {
                 </div>
 
                 <div className={`nav-links-wrapper ${isMenuOpen ? 'active' : ''}`}>
+                    <div className="mobile-menu-header">
+                        <span className="menu-title">Navigation</span>
+                    </div>
+
                     <ul className="nav-links">
                         <li><Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link></li>
                         <li><a href="/#accommodation" onClick={() => setIsMenuOpen(false)}>Experience</a></li>
@@ -35,6 +42,7 @@ const Navbar = () => {
                         <li><Link to="/weddings" onClick={() => setIsMenuOpen(false)}>Weddings</Link></li>
                         <li><a href="/#contact" onClick={() => setIsMenuOpen(false)}>Contact</a></li>
                     </ul>
+
                     <button
                         className="btn-cta"
                         onClick={() => {
@@ -44,6 +52,9 @@ const Navbar = () => {
                     >
                         Book Now
                     </button>
+
+                    {/* Compact Arrow Pull Handle (Visual only for user request) */}
+                    <div className="menu-arrow-indicator"></div>
                 </div>
 
                 <button className="mobile-menu-toggle" onClick={toggleMenu} aria-label="Toggle Menu">
