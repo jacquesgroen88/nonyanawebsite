@@ -278,3 +278,53 @@
         grid-template-columns: 1fr;
     }
 }
+
+/* Wedding Package Revamp */
+.wedding-package-showcase {
+    margin-top: 80px;
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.05);
+    border-top: 5px solid var(--accent);
+}
+
+.package-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.package-feature h4 {
+    color: var(--secondary);
+    font-size: 1.25rem;
+    margin-bottom: 20px !important;
+    border-bottom: 1.5px solid #f0f0f0;
+    padding-bottom: 10px;
+    text-align: left !important;
+}
+
+.package-list {
+    list-style: none;
+    padding: 0;
+}
+
+.package-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #f8f8f8;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.package-list li strong {
+    color: var(--primary);
+}
+
+@media (max-width: 768px) {
+    .package-grid {
+        grid-template-columns: 1fr;
+    }
+}
