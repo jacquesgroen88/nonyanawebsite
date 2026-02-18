@@ -23,7 +23,7 @@ const Accommodation = () => {
         {
             title: "Wedding Venue",
             description: "Picturesque riverside weddings for up to 100 guests. Make your most important day unforgettable.",
-            image: "https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+            image: "https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=70",
             features: ["100 Guest Capacity", "Boat Arrival for Bride", "Big Dancefloor", "Catering & Bar Service"],
             path: "/weddings"
         }

@@ -270,8 +270,14 @@
 }
 
 @media (max-width: 768px) {
+    .sub-page-hero {
+        padding-top: 15vh;
+        /* Add room for the logo */
+        height: 50vh;
+    }
+
     .sub-page-hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     .category-gallery {

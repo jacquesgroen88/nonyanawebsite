@@ -38,11 +38,25 @@
     /* White by default */
 }
 
+@media (max-width: 768px) {
+    .nav-logo {
+        height: 120px;
+        /* Scaled down for mobile overlap prevention */
+    }
+}
+
 .navbar.scrolled .nav-logo {
     height: 100px;
     /* Slightly larger when scrolled as requested */
     filter: none;
     /* Original colors when scrolled */
+}
+
+@media (max-width: 768px) {
+    .navbar.scrolled .nav-logo {
+        height: 70px;
+        /* More compact when scrolled on mobile */
+    }
 }
 
 .nav-links {

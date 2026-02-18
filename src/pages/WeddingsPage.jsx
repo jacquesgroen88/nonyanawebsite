@@ -8,7 +8,7 @@ import w3 from '../assets/weddings-sub/1292.jpg';
 import w4 from '../assets/weddings-sub/corrie fotos n8 813.jpg';
 import w5 from '../assets/weddings-sub/corrie fotos n8 817.jpg';
 
-const weddingHero = "https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80";
+const weddingHero = "https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=70";
 
 const WeddingsPage = () => {
     return (

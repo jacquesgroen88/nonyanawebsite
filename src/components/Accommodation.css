@@ -91,10 +91,17 @@
 }
 
 .btn-outline-dark {
-    border: 1px solid var(--primary);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid var(--primary);
     color: var(--primary);
     background: transparent;
     width: 100%;
+    padding: 12px 24px;
+    font-weight: 600;
+    transition: var(--transition);
+    box-sizing: border-box;
 }
 
 .btn-outline-dark:hover {

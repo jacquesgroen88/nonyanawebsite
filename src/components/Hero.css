@@ -66,14 +66,21 @@
 
 @media (max-width: 1024px) {
     .hero {
-        padding-top: 18vh;
-        /* Decisive space from navbar */
+        padding-top: 20vh;
+        /* Scaled for tablet */
     }
 
     .hero-title {
         font-size: clamp(2.2rem, 6vw, 3rem);
         /* DECISIVELY scale down on tablet */
         line-height: 1.2;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 28vh;
+        /* Significant room for the large logo on phones */
     }
 }
 
