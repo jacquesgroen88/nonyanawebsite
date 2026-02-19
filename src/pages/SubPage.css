@@ -271,31 +271,31 @@
 
 @media (max-width: 768px) {
     .sub-page-hero {
-        padding-top: 20vh;
-        height: auto;
-        min-height: 40vh;
-        /* Slightly more compact */
-        padding-bottom: 30px;
+        padding-top: 20vh !important;
+        height: auto !important;
+        min-height: 35vh !important;
+        /* More compact */
+        padding-bottom: 30px !important;
     }
 
     .sub-page-hero h1 {
-        font-size: 1.6rem;
-        /* Further reduced for better proportion */
-        line-height: 1.2;
+        font-size: 1.4rem !important;
+        /* Reduced 30%+ from previous 1.8rem */
+        line-height: 1.2 !important;
     }
 
     .sub-page-hero .subtitle {
-        font-size: 0.9rem;
+        font-size: 0.85rem !important;
         /* Further reduced */
     }
 
     .category-gallery {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
     }
 
     .text-content h2 {
-        font-size: 1.5rem;
-        /* Further reduced */
+        font-size: 1.4rem !important;
+        /* Consistent redux */
     }
 }
 
