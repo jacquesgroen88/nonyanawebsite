@@ -271,17 +271,27 @@
 
 @media (max-width: 768px) {
     .sub-page-hero {
-        padding-top: 15vh;
-        /* Add room for the logo */
-        height: 50vh;
+        padding-top: 20vh;
+        height: auto;
+        min-height: 45vh;
+        padding-bottom: 40px;
     }
 
     .sub-page-hero h1 {
-        font-size: 2.2rem;
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+
+    .sub-page-hero .subtitle {
+        font-size: 1rem;
     }
 
     .category-gallery {
         grid-template-columns: 1fr;
+    }
+
+    .text-content h2 {
+        font-size: 1.7rem;
     }
 }
 

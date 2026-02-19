@@ -79,8 +79,17 @@
 
 @media (max-width: 768px) {
     .hero {
-        padding-top: 28vh;
-        /* Significant room for the large logo on phones */
+        padding-top: 25vh;
+        padding-bottom: 80px;
+        height: auto;
+        min-height: 100vh;
+        display: flex;
+        align-items: flex-start;
+        background-attachment: scroll;
+    }
+
+    .hero-container {
+        padding-bottom: 40px;
     }
 }
 
