@@ -273,17 +273,20 @@
     .sub-page-hero {
         padding-top: 20vh;
         height: auto;
-        min-height: 45vh;
-        padding-bottom: 40px;
+        min-height: 40vh;
+        /* Slightly more compact */
+        padding-bottom: 30px;
     }
 
     .sub-page-hero h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+        /* Further reduced for better proportion */
         line-height: 1.2;
     }
 
     .sub-page-hero .subtitle {
-        font-size: 1rem;
+        font-size: 0.9rem;
+        /* Further reduced */
     }
 
     .category-gallery {
@@ -291,7 +294,8 @@
     }
 
     .text-content h2 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
+        /* Further reduced */
     }
 }
 

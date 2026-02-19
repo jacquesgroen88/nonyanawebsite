@@ -91,6 +91,16 @@
     .hero-container {
         padding-bottom: 40px;
     }
+
+    .hero-title {
+        font-size: 2rem;
+        /* Decisively smaller for mobile */
+    }
+
+    .hero-scroll {
+        display: none;
+        /* Hide on mobile as requested */
+    }
 }
 
 .hero-btns {
