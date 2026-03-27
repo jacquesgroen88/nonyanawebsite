@@ -39,14 +39,14 @@
     font-weight: 600;
     margin-bottom: 20px;
     font-family: 'Inter', sans-serif;
-    font-size: 1.1rem;
+    font-size: 0.88rem;
     text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
     text-align: left;
     /* Force left-align */
 }
 
 .hero-title {
-    font-size: clamp(1rem, 8vw, 4.5rem);
+    font-size: clamp(0.8rem, 6.4vw, 3.6rem);
     /* Reduced min so mobile can override */
     color: white;
     margin-bottom: 30px;
@@ -56,7 +56,7 @@
 }
 
 .hero-description {
-    font-size: 1.25rem;
+    font-size: 1rem;
     max-width: 600px;
     margin-bottom: 40px;
     color: #ffffff;
@@ -71,7 +71,7 @@
     }
 
     .hero-title {
-        font-size: 2.8rem;
+        font-size: 2.24rem;
         /* Clean fixed size for tablet */
         line-height: 1.2;
     }
@@ -94,13 +94,13 @@
     }
 
     .hero-title {
-        font-size: 1.8rem;
+        font-size: 1.44rem;
         /* Explicit — no clamp minimum fighting this */
         line-height: 1.15;
     }
 
     .hero-description {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 
     .hero-scroll {

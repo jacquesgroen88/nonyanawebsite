@@ -36,7 +36,7 @@
 }
 
 .sub-page-hero h1 {
-    font-size: 4rem;
+    font-size: 3.2rem;
     font-weight: 700;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -46,7 +46,7 @@
 }
 
 .sub-page-hero .subtitle {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 300;
     opacity: 1;
     text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.5);
@@ -279,13 +279,13 @@
     }
 
     .sub-page-hero h1 {
-        font-size: 1.4rem !important;
-        /* Reduced 30%+ from previous 1.8rem */
+        font-size: 1.12rem !important;
+        /* Reduced from previous 1.4rem */
         line-height: 1.2 !important;
     }
 
     .sub-page-hero .subtitle {
-        font-size: 0.85rem !important;
+        font-size: 0.68rem !important;
         /* Further reduced */
     }
 

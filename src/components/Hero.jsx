@@ -9,7 +9,7 @@ const Hero = () => {
             <div className="container hero-container">
                 <div className="hero-content">
                     <h4 className="hero-subtitle">Secluded Riverside Sanctuary</h4>
-                    <h1 className="hero-title">An Idyllic Getaway <br /> on the Vaal River</h1>
+                    <h1 className="hero-title">The Perfect Getaway <br /> on the Vaal River</h1>
                     <p className="hero-description">
                         Experience the ultimate retreat for conferences, fishing trips, camping, and weddings.
                         Located just an hour from Johannesburg, tucked away on a broad sweep of the majestic Vaal.
